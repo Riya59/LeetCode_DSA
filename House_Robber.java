@@ -4,8 +4,8 @@ class Solution {
         int sum = 0;
         int incl = nums[0];
         int excl_new;
-        int i;
-        for(i=1;i<n;i++){
+       
+        for(int i=1;i<n;i++){
             excl_new = Math.max(incl, sum);
             incl = sum + nums[i];
             sum = excl_new;
